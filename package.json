@@ -1,0 +1,38 @@
+{
+  "name": "com.example.hello",
+  "displayName": "HelloWorld",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-tts": {},
+      "cordova-plugin-vibration": {},
+      "cordova-plugin-device": {},
+      "cordova-plugin-inappbrowser": {},
+      "cordova-plugin-printer": {},
+      "com-badrit-printplugin": {}
+    },
+    "platforms": [
+      "android"
+    ]
+  },
+  "dependencies": {
+    "com-badrit-printplugin": "^0.2.0",
+    "cordova-android": "^6.2.3",
+    "cordova-plugin-device": "^2.0.1",
+    "cordova-plugin-inappbrowser": "^2.0.2",
+    "cordova-plugin-printer": "^0.7.3",
+    "cordova-plugin-tts": "^0.2.3",
+    "cordova-plugin-vibration": "^3.0.1",
+    "cordova-plugin-whitelist": "1",
+    "de.appplant.cordova.plugin.printer": "^0.7.3",
+    "phonegap": "^6.3.0"
+  }
+}

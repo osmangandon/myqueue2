@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "myqueue",
+  "short_name": "myqueue",
+  "version": "com.myqueue.myqueue",
+  "description": "myqueue",
+  "author": "myqueue",
+  "icons": [],
+  "start_url": "index.html"
+}

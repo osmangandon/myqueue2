@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="content-type" content="text/x-component">
+    <title>Call Queue</title>
+
+    <!-- General meta details -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="<!-- replace here with Google author profile -->" />
+    <meta name="robot" content="index,follow" />
+
+
+
+
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/creative.min.js"></script>
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/creative.min.css" rel="stylesheet">
+
+
+
+
+
+
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+<script type="text/javascript" charset="utf-8" src="tts.js"></script>
+
+
+
+
+
+
+<script language='javascript'>
+//membuat document jquery
+$(document).ready(function(){
+
+	$("#btnHOME").on('click', function(){
+		window.location.href = "index.html"; 
+
+	});	
+
+
+	$("#btnCALL").on('click', function(){
+		window.location.href = "user_confirm.html"; 
+
+	});	
+
+
+	$("#btnVOID").on('click', function(){
+		window.location.href = "user_void.html"; 
+
+	});	
+
+
+	$("#btnCONFIRM").on('click', function(){
+		window.location.href = "user_confirm.html"; 
+
+	});	
+
+
+
+
+
+
+document.addEventListener('deviceready', function () {
+    TTS.speak('User Call Queue', function () {
+        console.log('Ready !');
+    }, function (reason) {
+        console.log(reason);
+    });
+});
+
+
+
+
+
+$("#ipin").load("http://omahbiasawae.net/duana_antrian/i_call.php?aksi=call");
+
+
+});
+
+</script>
+
+
+
+
+
+
+
+
+<style>
+  
+  #foo_footer {
+    position: fixed;
+    bottom: 0;
+  }
+
+	
+.panel > .panel-heading-custom {
+    background: #eaff06; color: black;
+}
+
+.panel > .panel-body-custom {
+    background: #e3e8e2; color: black;
+}
+
+
+
+.btn-xl {
+    padding: 18px 28px;
+    font-size: 22px;
+    border-radius: 8px;
+}
+
+
+
+</style>
+
+</head>
+<body>
+
+
+<form name="formx21" id="formx21">
+
+
+<div class="panel panel-default">
+
+<div class="panel-body panel-body-custom">
+
+<table border="0" width="100%">
+<tr>
+<td align="left">
+<input type="button" class="btn btn-default" name="btnHOME" id="btnHOME" value="<< BACK" />
+</td>
+</tr>
+</table>
+
+</div>
+
+
+<div class="panel-heading panel-heading-custom">
+<h3 align="center">Call Queue...</h3>
+</div>
+<div class="panel-body panel-body-custom">
+
+<table border="0" width="100%">
+<tr>
+<td align="center">
+
+<div id="loading" style="display:none">
+<img src="img/progress-bar.gif" width="100" height="16">
+</div>
+
+<div id="ipin">
+<img src="img/progress-bar.gif" width="100" height="16">
+</div>
+
+
+
+
+<input type="button" class="btn btn-primary btn-xl" name="btnCALL" id="btnCALL" value="CALL" />
+<input type="button" class="btn btn-success btn-xl" name="btnVOID" id="btnVOID" value="VOID" />
+<input type="button" class="btn btn-danger btn-xl" name="btnCONFIRM" id="btnCONFIRM" value="CONFIRM" />
+
+</td>
+</tr>
+</table>
+
+<br>
+<br>
+
+
+
+
+
+
+
+</div>
+
+
+<div class="panel-body panel-body-custom">
+<p align="center">
+2018. Your Queue System
+</p>
+</div>
+</div>
+
+
+
+
+</form>
+
+
+
+</body>
+</html>
