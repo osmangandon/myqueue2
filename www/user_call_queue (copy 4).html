@@ -80,13 +80,6 @@ $(document).ready(function(){
 	});	
 
 
-	$("#btnCALLVOID").on('click', function(){
-		$("#iloading").show();
-		$("#ipin").load("http://omahbiasawae.net/duana_antrian/i_callvoid.php?aksi=call");
-
-	});	
-
-
 	$("#btnVOID").on('click', function(){
 		window.location.href = "user_void.html"; 
 
@@ -210,8 +203,6 @@ $("#ipin").load("http://omahbiasawae.net/duana_antrian/i_call.php?aksi=calla");
 
 
 <input type="button" class="btn btn-primary btn-xl" name="btnCALL" id="btnCALL" value="CALL" />
-<input type="button" class="btn btn-primary btn-xl" name="btnCALLVOID" id="btnCALLVOID" value="CALL VOID" />
-<br>
 <input type="button" class="btn btn-success btn-xl" name="btnVOID" id="btnVOID" value="VOID" />
 <input type="button" class="btn btn-danger btn-xl" name="btnCONFIRM" id="btnCONFIRM" value="CONFIRM" />
 <hr>
