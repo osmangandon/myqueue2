@@ -60,46 +60,6 @@
 
 
 
-<script language='javascript'>
-//membuat document jquery
-$(document).ready(function(){
-
-	$("#btnKRM").on('click', function(){
-		$('#loading').show();
-
-		$("#formx2").submit(function(){
-			var nilaiku = $("#input").val();
-
-			$.ajax({
-				url: "<?php echo $sumber;?>/i_pin.php?aksi=simpan&nilku="+nilaiku,
-				type:"POST",
-				data:$(this).serialize(),
-				success:function(data){
-					$("#ipin2").html(data);
-					setTimeout('$("#loading").hide()',5000);
-					}
-				});
-			return false;
-		});
-	
-	
-	});	
-
-
-
-
-
-
-
-
-
-});
-
-</script>
-
-
-
-
 
 <script language='javascript'>
 //membuat document jquery
@@ -125,79 +85,7 @@ document.addEventListener('deviceready', function () {
 
 
 
-
-
-
-
-$('#b1').click(
-    function(){
-        $('#input').val($('#input').val()+$(this).val());
-    }
-);
-
-
-$('#b2').click(
-    function(){
-        $('#input').val($('#input').val()+$(this).val());
-    }
-);
-
-
-$('#b3').click(
-    function(){
-        $('#input').val($('#input').val()+$(this).val());
-    }
-);
-
-
-$('#b4').click(
-    function(){
-        $('#input').val($('#input').val()+$(this).val());
-    }
-);
-
-
-$('#b5').click(
-    function(){
-        $('#input').val($('#input').val()+$(this).val());
-    }
-);
-
-
-$('#b6').click(
-    function(){
-        $('#input').val($('#input').val()+$(this).val());
-    }
-);
-
-$('#b7').click(
-    function(){
-        $('#input').val($('#input').val()+$(this).val());
-    }
-);
-
-
-$('#b8').click(
-    function(){
-        $('#input').val($('#input').val()+$(this).val());
-    }
-);
-
-
-$('#b9').click(
-    function(){
-        $('#input').val($('#input').val()+$(this).val());
-    }
-);
-
-
-$('#b0').click(
-    function(){
-        $('#input').val($('#input').val()+$(this).val());
-    }
-);
-
-
+$("#ipin").load("http://omahbiasawae.net/duana_antrian/i_pin.php");
 
 
 
@@ -281,53 +169,7 @@ $('#b0').click(
 
 <div id="ipin">
 
-
-
-<div id="tombolya" align="center">
-
-<table width="300" bgcolor="white">
-	<tr>
-		<td height="300">
-
-<form role="form" id="formx2" name="formx2">
-<div class="input-group">
-  
-
-  <span class="input-group-btn">
-
-  <input type="text" class="form-control" placeholder="Your PIN..." required value="" name="input" id="input">
-  
-
-
-<br>
-<input type="button" id="b1" value="1" class="btn btn-primary btn-xl" />
-<input type="button" id="b2" value="2" class="btn btn-primary btn-xl" />
-<input type="button" id="b3" value="3" class="btn btn-primary btn-xl" />
-<br>
-<input type="button" id="b4" value="4" class="btn btn-primary btn-xl" />
-<input type="button" id="b5" value="5" class="btn btn-primary btn-xl" />
-<input type="button" id="b6" value="6" class="btn btn-primary btn-xl" />
-<br>
-<input type="button" id="b7" value="7" class="btn btn-primary btn-xl" />
-<input type="button" id="b8" value="8" class="btn btn-primary btn-xl" />
-<input type="button" id="b9" value="9" class="btn btn-primary btn-xl" />
-<br>
-<input type="button" id="b0" value="0" class="btn btn-primary btn-xl" />
-
-
-
-
-<button type="submit" class="btn btn-default btn-xl" id="btnKRM" value="Submit" name="btnKRM">Submit >></button>
-  </span> 
-</div>
-</form>
-
-
-
-</td>
-	</tr>
-</table>
-
+<img src="img/progress-bar.gif" width="100" height="16">
 
 </div>
 
