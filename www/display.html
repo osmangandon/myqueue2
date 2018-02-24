@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta http-equiv="content-type" content="text/x-component">
-    <title>Display Sekali saja ya.....</title>
+    <title>Display.....</title>
 
     <!-- General meta details -->
     <meta name="keywords" content="" />
@@ -79,7 +79,7 @@ setInterval(loadLog, 5000);
 function loadLog(){
 console.log("interval...");
 $("#loading").hide();
-$("#idisplayku").load("http://192.168.1.100:8080/i_display.php?aksi=baca");
+$("#idisplayku").load("http://127.0.0.1:8080/i_display.php?aksi=baca");
 $("#loading").show();
 
 
@@ -97,7 +97,7 @@ setInterval(loadLog2, 5000);
 
 function loadLog2(){
 console.log("interval2...");
-$("#idisplayku2").load("http://192.168.1.100:8080/i_display.php?aksi=baca2");
+$("#idisplayku2").load("http://127.0.0.1:8080/i_display.php?aksi=baca2");
 
 
 }
@@ -113,7 +113,7 @@ setInterval(loadLog3, 15000);
 
 function loadLog3(){
 console.log("interval3...");
-$("#idisplayku3").load("http://192.168.1.100:8080/i_display3.php?aksi=stop");
+$("#idisplayku3").load("http://127.0.0.1:8080/i_display3.php?aksi=stop");
 
 
 }
